@@ -1,0 +1,70 @@
+<link id ="lin" href ="css/main.css" rel="stylesheet" type="text/css"/>
+
+<div id="root">
+   <div class="container">
+       <div class="header">
+        <h1>devfinder</h1>
+        <div class="theme"><span id="light">DARK</span>  <img id="sun" onclick="themeChange()" class="moon" src="assets/moon.svg" /></div>
+       </div>
+       <div class="searchBar">
+        <img class="searchImg" src="assets/search.svg">
+           <input id="input" placeholder="Search GitHub username..." type="text"/>
+           <div onclick="fetchData()" class="searchButton">Search</div>
+       </div>
+       <div class="renderingDiv">
+         <img id="profileImage" src="" />
+         <div>
+            <div class="top">
+                <h1 id ="userName"></h1>
+                <p id="date"></p>
+            </div>
+            <a id="login" href=""></a>
+            <p id="bio"></p>
+            <div class="followDiv">
+                <div class="head">
+                    <span>Repos</span>
+                    <span>Followers</span>
+                    <span>Following</span>
+                </div>
+                <div class="follows">
+                      <span id="repos" class="number"></span>
+                      <span id="followers" class="number"></span>
+                      <span id="following" class="number"></span>
+                </div>
+            </div>
+            <div class="link">
+                   <div class="flex"><img src="assets/icon-location.svg"/>
+              &nbsp &nbsp<div id="locational"></div> </div>
+                   <div class="flex"><img src="assets/icon-twitter.svg"/>
+                    &nbsp &nbsp<a href="" id="twitter"></a></div> 
+            </div>
+            <div class="link">
+                <div class="flex right"><img src="assets/icon-website.svg"/>
+                    &nbsp &nbsp<div id="website"></div></div> 
+                <div class="flex right"><img src="assets/icon-company.svg"/>
+                    &nbsp &nbsp<div id="company"></div></div> 
+            </div>
+         </div>
+       </div>
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/script.js"></script>
